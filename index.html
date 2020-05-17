@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stack Plot</title>
-    <link rel="stylesheet" href="./css/bulma-0.8.2/css/bulma.min.css" />
+    <title>IRC 37-2018 Thickness Stack Plot</title>
+
+    <!-- <link rel="stylesheet" href="./css/bulma-0.8.2/css/bulma.min.css" /> -->
+    <link rel="stylesheet" href="https://www.jsdelivr.com/package/npm/bulma">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script src="./js/plotly-latest.min.js"></script>
+    <!-- <script src="./js/plotly-latest.min.js"></script> -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 
 <body>
@@ -97,7 +100,13 @@
 
 
                 title: ' <b style="color:#f46074;">Design Asphalt Pavement Thickness Variability Based on Pavement Temperature (MAPT)</b> <br> IRC 37-2018, Effective Subgrade CBR = 10',
-
+                yaxis: {
+                    title: "Pavement Thickness, mm",
+                    // range: [0, 110],
+                    showgrid: true,
+                    showline: true,
+                    // gridcolor: "#e8dff5",
+                },
                 // yaxis: { tickformat: '%' },
                 xaxis: {
                     domain: [0, 0.33],
@@ -193,7 +202,13 @@
                 paper_bgcolor: "floralwhite",
                 height: 590,
                 title: '<b style="color:#f46074;">Design Asphalt Pavement Thickness Variability Based on Pavement Temperature (MAPT)</b><br> IRC 37-2018, Effective Subgrade CBR = 5',
-
+                yaxis: {
+                    title: "Pavement Thickness, mm",
+                    //   range: [0, 110],
+                    showgrid: true,
+                    showline: true,
+                    // gridcolor: "#e8dff5",
+                },
                 // yaxis: { tickformat: '%' },
                 xaxis: {
                     domain: [0, 0.33],
